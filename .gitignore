@@ -4,3 +4,5 @@ Library/
 Logs/
 ProjectSettings/
 UserSettings/
+.vscode/
+temp/
