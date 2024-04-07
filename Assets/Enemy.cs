@@ -16,6 +16,8 @@ public class ScriptOfEnemy : MonoBehaviour
             return health;
         }
     }
+
+    public float health = 1;
     public void takeDamage(float damage){
         
 

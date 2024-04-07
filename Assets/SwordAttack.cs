@@ -31,7 +31,7 @@ public class SwordAttack : MonoBehaviour
 
         if(other.tag == "Enemy"){
             //Going to deal damage to the enemy
-            EnemysScript enemy = other.GetComponent<EnemysScript>();
+            Enemy enemy = other.GetComponent<Enemy>();
 
             if(enemy != null){
                 enemy.Health -= damage;
