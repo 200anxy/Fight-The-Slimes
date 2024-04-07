@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2424503868370976590}
+  CapsuleColliderforSlime: {fileID: 4326615092509305159}
   damaged: 0
   health: 10
 --- !u!95 &2424503868370976590
