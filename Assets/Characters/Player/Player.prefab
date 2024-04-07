@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   collisionOffset: 0.015
-  movmentFilter:
+  movementFilter:
     useTriggers: 0
     useLayerMask: 0
     useDepth: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   swordAttack: {fileID: 4571880471122602373}
-  rightorLeft: 1
+  damage: 3
 --- !u!1 &3796636722064878869
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -333,6 +333,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c6f636e2cb9bd419dd7eed2e039791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 3
   swordCollider: {fileID: 8579651181049644867}
-  playerController: {fileID: 70628562408870136}
-  TestBool: 1

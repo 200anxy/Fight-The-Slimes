@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyScript : MonoBehaviour
-
+public class ScriptOfEnemy : MonoBehaviour
 {
     public float Health{
+
         set{
             health = value;
-            if(health<=0){
+            if(health <= 0){
                 Defeated();
             }
         }
@@ -17,11 +16,12 @@ public class EnemyScript : MonoBehaviour
             return health;
         }
     }
-    public float health = 1;
+    public void takeDamage(float damage){
+        
 
+    }
 
-
-    private void Defeated(){
+    public void Defeated(){
         Destroy(gameObject);
     }
 }
