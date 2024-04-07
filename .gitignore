@@ -1,2 +1,6 @@
 
 .vsconfig
+Library/
+Logs/
+ProjectSettings/
+UserSettings/

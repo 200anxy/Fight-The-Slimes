@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public SwordAttack swordAttack;
 
+
 // Defining variables... 
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
