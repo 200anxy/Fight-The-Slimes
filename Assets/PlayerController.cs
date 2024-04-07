@@ -10,14 +10,17 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
     public SwordAttack swordAttack;
+    BoxCollider2D boxCollider;
 
-
+    Enemy enemy;
 // Defining variables... 
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
+
     public float damage = 3;    
 
     bool canMove = true;
@@ -112,4 +115,8 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement() {
         canMove = true;
     }
-}
+
+
+
+    }
+
