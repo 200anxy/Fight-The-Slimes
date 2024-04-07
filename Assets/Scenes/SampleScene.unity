@@ -4948,8 +4948,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
       propertyPath: collisionOffset
-      value: 0.015
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 182524849430681739, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
       propertyPath: m_Actions
@@ -5021,6 +5025,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2212160267842759458, guid: be562427f2fae9e44be262abb02940c4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212160267842759458, guid: be562427f2fae9e44be262abb02940c4, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 0
       objectReference: {fileID: 0}
@@ -5054,7 +5062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267276441517022014, guid: be562427f2fae9e44be262abb02940c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.721447
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7267276441517022014, guid: be562427f2fae9e44be262abb02940c4, type: 3}
       propertyPath: m_LocalRotation.w

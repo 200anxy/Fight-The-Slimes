@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    public float damage = 3;    
 
     bool canMove = true;
 
