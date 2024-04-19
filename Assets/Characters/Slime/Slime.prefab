@@ -316,6 +316,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   speed: 0.25
   animator: {fileID: 2424503868370976590}
+  SlimePrefab: {fileID: 2564432984241788059}
   CapsuleColliderforSlime: {fileID: 4326615092509305159}
   damaged: 0
   health: 15

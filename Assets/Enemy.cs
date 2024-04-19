@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     private float distance;
     public Animator animator;
+    [SerializeField] public GameObject SlimePrefab;
     public float Health{
 
         set{
@@ -66,6 +67,15 @@ public class Enemy : MonoBehaviour
     public void RemoveEnemy(){
         Destroy(gameObject);
     }
+
+    public void SpawnSlime(){
+        Instantiate(SlimePrefab, transform.position, Quaternion.identity);
+
+    }
+
+
+
+
 
 
 }
