@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public SwordAttack swordAttack;
     BoxCollider2D boxCollider;
+    public int health = 3;
 
     Enemy enemy;
 // Defining variables... 
@@ -115,6 +116,7 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement() {
         canMove = true;
     }
+
 
 
 
