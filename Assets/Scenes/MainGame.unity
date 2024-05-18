@@ -5559,7 +5559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18176c4525ecd64880c386067af8234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 1
+  spawnRate: 3
   enemyPrefab: {fileID: 2564432984241788059, guid: be562427f2fae9e44be262abb02940c4, type: 3}
   canspawn: 1
 --- !u!4 &1832420040
@@ -5585,6 +5585,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
+      propertyPath: KBForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
+      propertyPath: KBCounter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
+      propertyPath: KBtotalTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 70628562408870136, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
+      propertyPath: KnockFromRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 201994834016325312, guid: 615fa87f77dbfdf4e8c1dfa223723523, type: 3}
       propertyPath: m_Name
       value: Player

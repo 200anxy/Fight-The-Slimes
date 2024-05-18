@@ -7,7 +7,9 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+
     public GameObject Player;
+    public PlayerController playerController;
     public float speed;
     private float distance;
     public Animator animator;
@@ -35,6 +37,8 @@ public class Enemy : MonoBehaviour
         CapsuleColliderforSlime = GetComponent<CapsuleCollider2D>(); 
         maxHealth = health;
         Player = GameObject.Find("Player");
+        playerController = Player.GetComponent<PlayerController>();
+        
     }
     public void Update(){
         distance = Vector2.Distance(transform.position, Player.transform.position);
@@ -43,6 +47,7 @@ public class Enemy : MonoBehaviour
 
 
     }
+
     private void Awake()
     {
         healthBar.maxValue = health;
@@ -66,6 +71,7 @@ public class Enemy : MonoBehaviour
     public void RemoveEnemy(){
         Destroy(gameObject);
     }
+
 
 
 }

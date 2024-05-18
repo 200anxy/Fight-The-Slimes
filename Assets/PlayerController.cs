@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 // Takes and handles input and movement for a player character
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
 
+
     public float damage = 3;    
 
     bool canMove = true;
@@ -36,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate() {
         if(canMove) {
-            // If movement input is not 0, try to move
+            // If movement input i not 0, try to move
             if(movementInput != Vector2.zero){
                 
                 bool success = TryMove(movementInput);
@@ -61,6 +64,10 @@ public class PlayerController : MonoBehaviour
                 spriteRenderer.flipX = false;
             }
         }
+    }
+
+    private void Awake(){
+        instance = this;
     }
 
     private bool TryMove(Vector2 direction) {
@@ -118,7 +125,5 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
-
-    }
+}
 
